@@ -1,13 +1,17 @@
 import star from '../assets/star.png'
 import PropTypes from 'prop-types'
 function Card(props) {
+  let badgeText;
+  if (!props.openSpots) {
+    badgeText = 'SOLD OUT';
+  } else if (props.location === 'Online') {
+    badgeText = 'ONLINE'
+  }
   return (
-    <section className='card'>
+    <div className='card'>
       <div className='card--img-block'>
-        <div className='card--label'>
-          SOLD OUT
-        </div>
-        <img src={`../../public/images/${props.coverImg}`}></img>
+        {badgeText && <div className='card--label'>{badgeText}</div>}
+        <img className='card--img' src={`../../public/images/${props.coverImg}`}></img>
       </div>
       <div className='card--description'>
         <p className='card--line-1'>
@@ -22,11 +26,12 @@ function Card(props) {
           <span className='bold'>From {props.price}</span> / person
         </p>
       </div>
-    </section>
+    </div>
   )
 }
 
 Card.propTypes = {
+  openSpots: PropTypes.number,
   coverImg: PropTypes.string,
   rating: PropTypes.string,
   stats: PropTypes.object,

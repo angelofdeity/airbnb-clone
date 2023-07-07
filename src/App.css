@@ -47,6 +47,7 @@ section {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    gap: 20px;
 }
 .card {
     display: flex;
