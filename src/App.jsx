@@ -10,7 +10,9 @@ export default function App() {
     <div className="main-container">
       <Navbar />
       <Hero />
-      {cards}
+      <section className="cards-list">
+        {cards}
+      </section>
       {/* <Card
         img='../public/images/katie-zafares.png'
         rating='5.0'

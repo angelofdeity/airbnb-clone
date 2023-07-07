@@ -12,7 +12,7 @@ function Card(props) {
       <div className='card--description'>
         <p className='card--line-1'>
           <img src={star}></img>
-          {' '}{props.rating}
+          {' '}{props.stats.rating}
           <span className='gray'> ({props.stats.reviewCount})∙{props.location}</span>
         </p>
         <p className='card--line-2'>

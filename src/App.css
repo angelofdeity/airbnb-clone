@@ -43,6 +43,16 @@ section {
     position: relative;
     border-radius: 9px;
 }
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
 .card--label {
     width: 80px;
     height: 20px;
