@@ -1,27 +1,38 @@
-import katie from '../assets/katie-zafares.png'
 import star from '../assets/star.png'
-export default function Card() {
+import PropTypes from 'prop-types'
+function Card(props) {
   return (
     <section className='card'>
       <div className='card--img-block'>
         <div className='card--label'>
           SOLD OUT
         </div>
-        <img src={katie}></img>
+        <img src={`../../public/images/${props.coverImg}`}></img>
       </div>
       <div className='card--description'>
         <p className='card--line-1'>
           <img src={star}></img>
-          {' '}5.0
-          <span className='card--light'> (6) USA</span>
+          {' '}{props.rating}
+          <span className='gray'> ({props.stats.reviewCount})∙{props.location}</span>
         </p>
         <p className='card--line-2'>
-          Life lessons with Katie Zaferes
+          {props.title}
         </p>
         <p className='card--line-3'>
-          <span className='card--bold'>From $135</span> / person
+          <span className='bold'>From {props.price}</span> / person
         </p>
       </div>
     </section>
   )
 }
+
+Card.propTypes = {
+  coverImg: PropTypes.string,
+  rating: PropTypes.string,
+  stats: PropTypes.object,
+  location: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.number
+}
+
+export default Card

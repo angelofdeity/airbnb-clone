@@ -6,6 +6,12 @@
 body {
     font-family: Poppins, sans-serif;
 }
+.gray {
+    color: #918E9B;
+}
+.bold {
+    font-weight: 600;
+}
 .nav {
     padding: 22px 30px;
     height: 70px;
@@ -32,12 +38,6 @@ section {
 .card--description {
     font-size: 12px;
     line-height: 1.5rem;
-}
-.card--light {
-    opacity: 0.5;
-}
-.card--bold {
-    font-weight: 600;
 }
 .card--img-block {
     position: relative;
