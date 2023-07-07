@@ -11,21 +11,21 @@ body {
     height: 70px;
     box-shadow: 0px 3px 7.45px rgba(0, 0, 0, 0.10);
 }
-.main-container {
-    padding-left: 36px;
-    width: 550px;
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    padding: 20px;
 }
 .img-grid {
-    padding-left: 41px;
-    padding-top: 26px;
-}
-.img-grid > img {
-    height: 232px;
-}
-.hero--heading {
-    font-weight: 600;
-    font-size: 36px;
+    align-self: center;
+    max-width: 400px;
 }
 .hero--txt {
     max-width: 320px;
+}
+.hero--heading {
+    margin-top: 32px;
+    font-size: 36px;
 }

@@ -3,11 +3,9 @@ import Hero from "./components/Hero";
 
 export default function App() {
   return (
-    <>
+    <div className="main-container">
       <Navbar />
-      <div className="main-container">
-        <Hero />
-      </div>
-    </>
+      <Hero />
+    </div>
     )
 }
