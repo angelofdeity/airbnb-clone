@@ -29,3 +29,30 @@ section {
     margin-top: 32px;
     font-size: 36px;
 }
+.card--description {
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+.card--light {
+    opacity: 0.5;
+}
+.card--bold {
+    font-weight: 600;
+}
+.card--img-block {
+    position: relative;
+    border-radius: 9px;
+}
+.card--label {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+    background-color: white;
+    font-weight: 400;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    left: 6px;
+}
