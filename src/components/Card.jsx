@@ -11,7 +11,7 @@ function Card(props) {
     <div className='card'>
       <div className='card--img-block'>
         {badgeText && <div className='card--label'>{badgeText}</div>}
-        <img className='card--img' src={`../../public/images/${props.coverImg}`}></img>
+        <img className='card--img' src={props.coverImg}></img>
       </div>
       <div className='card--description'>
         <p className='card--line-1'>
