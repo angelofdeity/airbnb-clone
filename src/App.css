@@ -26,8 +26,9 @@ section {
 }
 .img-grid {
     align-self: center;
-    max-width: 400px;
+    width: min(90%, 500px)
 }
+
 .hero--txt {
     max-width: 320px;
 }
@@ -41,7 +42,11 @@ section {
 }
 .card--img-block {
     position: relative;
+}
+.card--img-block > img {
     border-radius: 9px;
+    width: 175px;
+    height: 233px;
 }
 .cards-list {
     display: flex;
