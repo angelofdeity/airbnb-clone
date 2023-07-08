@@ -2,8 +2,9 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero";
 import Card from "./components/Card";
 import data from "./data"
+import Footer from "./components/Footer";
 const cards = data.map(data => {
-  return <Card {...data} />
+  return <Card key={data.id} {...data} />
 })
 export default function App() {
   return (
@@ -13,14 +14,7 @@ export default function App() {
       <section className="cards-list">
         {cards}
       </section>
-      {/* <Card
-        img='../public/images/katie-zafares.png'
-        rating='5.0'
-        reviewCount={6}
-        country='Germany'
-        title='Life Lessons with Katie Zaferes'
-        price={136}
-      /> */}
+      <Footer/>
     </div>
     )
 }

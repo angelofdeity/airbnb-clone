@@ -72,3 +72,14 @@ section {
     top: 6px;
     left: 6px;
 }
+
+footer {
+    display: grid;
+    place-items: center;
+    font-size: small;
+}
+footer a {
+    display: flex;
+    align-items: center;
+    color:dodgerblue;
+}
